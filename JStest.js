@@ -27,13 +27,15 @@ function mintNFT (_name, _age, _capcolor) {
 // and print their metadata with console.log()
 function listNFTs () {
   for(let i=0; i <= NFTs.length - 1; i++){
-   console.log(NFTs[i]);
+   console.log("\nName: " + NFTs[i].name);
+   console.log("Age: " + NFTs[i].age);
+   console.log("CapColor: " + NFTs[i].capcolor);
   }
 }
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
-  console.log(NFTs.length);
+  console.log("\n" + NFTs.length);
 }
 
 // call your functions below this line
@@ -42,4 +44,3 @@ mintNFT("Moises", "21", "Yellow");
 mintNFT("Xavier", "20", "Red");
 listNFTs();
 getTotalSupply();
-
